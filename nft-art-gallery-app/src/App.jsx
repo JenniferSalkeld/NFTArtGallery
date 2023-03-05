@@ -6,6 +6,7 @@ import {
   AppHeader,
   AppSubHeader
 } from './Components/AppComponents'
+import Gallery from './Components/Gallery'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,7 +15,7 @@ function App() {
     <AppMainContainer className="App">
       <AppHeader>NFT Art Gallery</AppHeader>
       <AppSubHeader>Double Click on your NFT to pin it!</AppSubHeader>
-      {/* <Gallery /> */}
+      <Gallery />
     </AppMainContainer>
   )
 }
