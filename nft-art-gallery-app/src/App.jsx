@@ -1,23 +1,17 @@
-import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-import './App.css'
-import {
-  AppMainContainer,
-  AppHeader,
-  AppSubHeader
-} from './Components/AppComponents'
-import Gallery from './Components/Gallery'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Home from "./Home";
+import Pinned from "./Pinned";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <AppMainContainer className="App">
-      <AppHeader>NFT Art Gallery</AppHeader>
-      <AppSubHeader>Double Click on your NFT to pin it!</AppSubHeader>
-      <Gallery />
-    </AppMainContainer>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="pins" element={<Pinned />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
