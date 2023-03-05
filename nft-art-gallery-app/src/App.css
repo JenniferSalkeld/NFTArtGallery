@@ -2,15 +2,15 @@
     position: absolute;
     top: 50px;
     right: 12%;
-    border: 1px solid pink;
+    border: 1px solid #ed2b96;
     padding:8px 16px;
     border-radius: 8px;
     cursor: pointer;
     color: black;
-    background-color: pink;
+    background-color: #ed2b96;
 }
 .btn-pins:hover,.btn-home:hover {
-    color: pink;
+    color: #ed2b96;
     background-color: transparent;
 }
 .pinned-wrapper {
@@ -23,6 +23,7 @@
 .pinned-wrapper > h1 {
     color: #fff;
     margin: 50px auto;
+    font-family: Poppins, sans-serif;
 }
 .content-wrapper {
     padding: 30px;
@@ -49,6 +50,7 @@
     background-color: #efefef;
 }
 .imageWrapper > p {
+    font-family: Poppins, sans-serif;
     color: #fff;
     margin-top: 15px;
     font-size: 18px;

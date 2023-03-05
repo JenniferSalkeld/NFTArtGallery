@@ -1,6 +1,22 @@
 import React, { useEffect, useState } from "react";
 import { dataToDisplay } from "./Components/data";
 import { useNavigate } from "react-router-dom";
+import Footer from './Components/Footer';
+import {
+  AppHeader,
+  AppSubHeader,
+  AppMainContainer,
+  PageToggle
+} from './Components/AppComponents';
+import {
+  Card,
+  ImageSpace,
+  ImageTitle,
+  FavoriteButton,
+  GalleryContainer,
+  GalleryCollection,
+  GallerySubtitle
+} from './Components/GalleryComponents'
 
 const Pinned = () => {
   let navigate = useNavigate();
@@ -12,21 +28,37 @@ const Pinned = () => {
     SetMyPins(() => [...filtered]);
   }, []);
   return (
-    <div className="pinned-wrapper">
-      <h1 className="titles">My Pins</h1>
-      <button className="btn-home" onClick={() => navigate("/")}>
-        Back To Home
-      </button>
+    <AppMainContainer>
+      <AppHeader>NFT Art Gallery</AppHeader>
+      <AppSubHeader>My Pins</AppSubHeader>
+      <PageToggle onClick={() => navigate("/")}>Back To Home</PageToggle>
+
       <div className="content-wrapper">
+        {myPins.map((e) => (
+          <Card >
+            <FavoriteButton></FavoriteButton>
+            <ImageSpace src={e.image} alt="is" />
+            <ImageTitle >{e.title}</ImageTitle>
+          </Card>
+        ))}
+      </div>
+
+
+      <Footer />
+    </AppMainContainer>
+  );
+};
+
+export default Pinned;
+
+
+
+
+{/* <div className="content-wrapper">
         {myPins.map((e) => (
           <div className="imageWrapper">
             <img src={e.image} alt="is" className="nftimg" />
             <p className="imgT">{e.title}</p>
           </div>
         ))}
-      </div>
-    </div>
-  );
-};
-
-export default Pinned;
+      </div> */}

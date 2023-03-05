@@ -2,8 +2,10 @@ import {
   AppMainContainer,
   AppHeader,
   AppSubHeader,
+  PageToggle
 } from "./Components/AppComponents";
 import Gallery from "./Components/Gallery";
+import Footer from './Components/Footer';
 //this to navigate to other pages
 import { useNavigate } from "react-router-dom";
 
@@ -14,9 +16,8 @@ function Home() {
       <AppHeader>NFT Art Gallery</AppHeader>
       <AppSubHeader>Click on the Heart to pin your Images</AppSubHeader>
       <Gallery />
-      <div className="btn-pins" onClick={() => navigate("/pins")}>
-        See Pinned Items
-      </div>
+      <PageToggle onClick={() => navigate("/pins")}>See Pinned Items</PageToggle>
+      <Footer />
     </AppMainContainer>
   );
 }

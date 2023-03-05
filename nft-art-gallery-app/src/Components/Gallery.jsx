@@ -13,7 +13,7 @@ import {
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 
 //style of the heart icon
-let favButtonStyle = { color: "pink", width: "100%", height: "100%" };
+let favButtonStyle = { color: "#ed2b96", width: "100%", height: "100%" };
 
 const DisplayCard = ({ image, title, id, pins }) => {
   //the state here is to check which is pined or not and display them
@@ -96,7 +96,7 @@ const Gallery = () => {
 
   return (
     <GalleryContainer>
-      <GallerySubtitle>Collection</GallerySubtitle>
+      <GallerySubtitle>Collections</GallerySubtitle>
       <GalleryCollection>
         {dataToDisplay.map((element) => (
           <DisplayCard
