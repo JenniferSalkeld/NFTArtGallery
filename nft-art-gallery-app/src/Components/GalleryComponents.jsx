@@ -1,0 +1,1 @@
+//File creates and styles components to be used in the Gallery component. 
