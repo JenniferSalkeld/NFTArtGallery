@@ -33,6 +33,7 @@
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
+    
 }
 .imageWrapper {
     display: flex;
@@ -42,6 +43,7 @@
     background-color: black;
     padding: 16px;
     border-radius: 12px;
+
 }
 .imageWrapper > img {
     width: 250px;

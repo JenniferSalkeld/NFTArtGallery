@@ -26,7 +26,9 @@ export const Card = styled.div`
   height: 400px;
   background: #1e1e1e;
   margin: 20px;
+  border: solid 1px #ed2b96;
   float: left;
+
 `;
 
 export const FavoriteButton = styled.button`
@@ -50,6 +52,7 @@ export const ImageSpace = styled.img`
   height: 300px;
   object-fit: contain;
   background: #cfcfcf;
+  box-shadow:0 0 5px 5px  #949494;
   clear: both;
 `;
 
