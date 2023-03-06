@@ -19,7 +19,7 @@ const Footer = () => {
   return (
     <FooterContainer>
         {/* Github Link */}
-        <SocialLink href="#"><AiOutlineGithub style={socialButtonStyle}/></SocialLink>
+        <SocialLink href="https://github.com/MaudHutch86/NFT-Art-gallery-Hackaton"><AiOutlineGithub style={socialButtonStyle}/></SocialLink>
         
         {/* CodePen.io Link */}
         <SocialLink href="#"><AiOutlineCodepen style={socialButtonStyle}/></SocialLink>
